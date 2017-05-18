@@ -1,0 +1,39 @@
+Antonio: Hola TJ, encantado de conocerte. ¿Qué haces aquí?
+
+TJ: Soy el ponente de esta presentación. Me han dicho que va a ayudarme con esta sesión.
+
+Antonio: ¿En qué te puedo ayudar?
+
+TJ: No me hace falta mucha ayuda. Soy tan inteligente que puedo incluso clonarme. Vamos a Bluemix, y te lo enseño. Por favor ayudante, refresca la pantalla.
+(Antonio refresca la pantalla F5 o Ctrl+R)
+
+Antonio: Estoy impresionado. Eres más inteligente de lo que pensaba. Déjame que te cuente cómo creo que lo has conseguido.
+
+(Explicación de cómo se han procisionado los servicios)
+
+Antonio: TJ, tras mi explicación veo alguna cara dormida. ¿Y si arrancamos el concurso?
+
+TJ: ¡Buena idea Antonio! Venga dale a refrescar para que todos vean que el concurso ha empezado.
+
+(Antonio refresca la pantalla F5 o Ctrl+R)
+
+
+Antonio: Déjame entonces que cuente cómo vamos a concursar. Quiero regalar un TJ a algún asistente. Como todos tenéis móvil y supongo que cuenta de Twitter, cuando os dé la señal, debéis publicar en vuestra cuenta el siguiente tweet. La aplicación Concurso escogerá al ganador.
+
+El tweet aparecerá en la pantalla:
+Yo voy a ir al stand de #IBM en el #DES2017 a ver el #DES17TJBOT
+
+(Cuando esté en color verde)
+
+TJ: Un segundo Antonio, ya está listo el concurso.
+
+Antonio: Pues bien amigos, que el concurso comience ya. Podéis empezar a twittear.
+
+(Timer en ppt ~1 min)
+
+Antonio: (Fin de tiempo) Veamos quién es el ganador. El ganador es...
+Puedes venir a recoger al clon de TJBot.
+
+Antonio: Bueno, TJ, esto llega a su fin. Si mis amigos quieren conocerte mejor, ¿dónde pueden verte?
+
+TJ: Diles que vengan luego al stand de IBM. ¡Allí estaré! ¡Gracias ayudante! Ha sido un placer trabajar contigo.

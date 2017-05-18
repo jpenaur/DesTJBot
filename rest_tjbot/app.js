@@ -24,6 +24,26 @@ app.get('/api/bluemix/createservice', function (req, res) {
 	});
 });
 
+app.get('/api/bluemix/bindservice', function (req, res) {
+	console.log('He entrado')
+	var params = {
+	  "service_instance_guid": "90669026-202d-44c1-b2bc-e765726d41b3",
+	  "app_guid": "6c97cf74-22ba-4960-bd48-4d684bb124fb",
+	};
+	
+	request.post({
+		headers: {'content-type' : 'application/json'},
+		url:'https://tjbotdes.mybluemix.net/rest/serviceBind', 
+		body: params,
+		json: true
+	}, function(err, httpResponse, body){
+		if(err){
+			console.log(err);
+		}
+		console.log(body);
+	});
+});
+
 app.get('/api/bluemix/instances', function (req, res) {
 	console.log('He entrado')
 	var params = {
@@ -102,7 +122,7 @@ app.get('/api/bluemix/getapp', function (req, res) {
 app.get('/api/bluemix/createapp', function (req, res) {
 	console.log('He entrado')
 	var params = {
-	   "name": "AppFromTJBot",
+	   "name": "AppFromTJBotBorrame",
 	   "space_guid": "2087c0ac-9d29-4f13-9df1-ce962ed24a66",
 	   "memory": 512,
 	   "buildpack": "liberty-for-java"
