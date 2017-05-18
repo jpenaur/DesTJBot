@@ -1,0 +1,6 @@
+Services plans guids:
+
+text_to_speech: 6c03d6f3-64f2-4e60-adb3-7d1c2906bde4
+speech_to_text: 6e98738d-b550-4987-b435-a3602d62c476
+Conversation: 805f3109-79db-4b3b-ad5a-f17273ffc4fd
+Tone_analyzer: 8840e558-8665-4e61-aa95-143c77df633f
