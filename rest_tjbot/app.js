@@ -27,7 +27,47 @@ app.get('/api/bluemix/createservice', function (req, res) {
 app.get('/api/bluemix/instances', function (req, res) {
 	console.log('He entrado')
 	var params = {
-	  "instances": 2,
+	  "instances": 2
+	};
+	
+	request.put({
+		headers: {'content-type' : 'application/json'},
+		qs: { app_guid: '6c97cf74-22ba-4960-bd48-4d684bb124fb' },
+		url:'https://tjbotdes.mybluemix.net/rest/updateApp', 
+		body: params,
+		json: true
+	}, function(err, httpResponse, body){
+		if(err){
+			console.log(err);
+		}
+		console.log(body);
+	});
+});
+
+app.get('/api/bluemix/start', function (req, res) {
+	console.log('He entrado')
+	var params = {
+	  "state": "STARTED"
+	};
+	
+	request.put({
+		headers: {'content-type' : 'application/json'},
+		qs: { app_guid: '6c97cf74-22ba-4960-bd48-4d684bb124fb' },
+		url:'https://tjbotdes.mybluemix.net/rest/updateApp', 
+		body: params,
+		json: true
+	}, function(err, httpResponse, body){
+		if(err){
+			console.log(err);
+		}
+		console.log(body);
+	});
+});
+
+app.get('/api/bluemix/stop', function (req, res) {
+	console.log('He entrado')
+	var params = {
+	  "state": "STOPPED"
 	};
 	
 	request.put({
@@ -47,8 +87,8 @@ app.get('/api/bluemix/instances', function (req, res) {
 app.get('/api/bluemix/getapp', function (req, res) {
 	console.log('He entrado')
 	request.get({
-		qs: { q: 'name:demotjbot' },
-		url:'https://tjbotdes.mybluemix.net/rest/updateApp', 
+		qs: { q: 'name: AppFromTJBot' },
+		url:'https://tjbotdes.mybluemix.net/rest/listApps', 
 		json: true
 	}, function(err, httpResponse, body){
 		if(err){
