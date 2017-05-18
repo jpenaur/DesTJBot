@@ -52,7 +52,7 @@ app.get('/api/bluemix/instances', function (req, res) {
 	
 	request.put({
 		headers: {'content-type' : 'application/json'},
-		qs: { app_guid: '6c97cf74-22ba-4960-bd48-4d684bb124fb' },
+		qs: { app_guid: '894201b7-f3a5-4491-ba6a-36fcbea3c0b0' },
 		url:'https://tjbotdes.mybluemix.net/rest/updateApp', 
 		body: params,
 		json: true
@@ -72,7 +72,7 @@ app.get('/api/bluemix/start', function (req, res) {
 	
 	request.put({
 		headers: {'content-type' : 'application/json'},
-		qs: { app_guid: '6c97cf74-22ba-4960-bd48-4d684bb124fb' },
+		qs: { app_guid: '894201b7-f3a5-4491-ba6a-36fcbea3c0b0' },
 		url:'https://tjbotdes.mybluemix.net/rest/updateApp', 
 		body: params,
 		json: true
@@ -92,7 +92,7 @@ app.get('/api/bluemix/stop', function (req, res) {
 	
 	request.put({
 		headers: {'content-type' : 'application/json'},
-		qs: { app_guid: '6c97cf74-22ba-4960-bd48-4d684bb124fb' },
+		qs: { app_guid: '894201b7-f3a5-4491-ba6a-36fcbea3c0b0' },
 		url:'https://tjbotdes.mybluemix.net/rest/updateApp', 
 		body: params,
 		json: true
