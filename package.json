@@ -1,0 +1,16 @@
+{
+  "name": "tjbot-des17",
+  "version": "1.0.0",
+  "description": "tjbot demo for des17",
+  "main": "config.js",
+  "scripts": {
+    "test": "node run.js"
+  },
+  "author": "María Borbonés",
+  "license": "ISC",
+  "dependencies": {
+    "fibers": "^1.0.15",
+    "request": "^2.81.0",
+    "tjbot": "^1.2.1"
+  }
+}
