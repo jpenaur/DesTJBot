@@ -1,3 +1,4 @@
+
 //Importamos lo modulos necesarios
 const config = require('./config.js');
 //*****recordar agregar otro config para la region de reino unido **********
@@ -50,8 +51,12 @@ function init() {
 	).then(
 	function(){
 		//tj.shine(colors['blue']);
-		//return SpeechToText(); 
-		}	
+		return SpeechToText(); 
+	}
+	).then(
+	function(){
+		return SpeechToText(); 
+	}		
 	);
 }
 
@@ -240,30 +245,33 @@ function action(message){
 		console.log("entro en ayudar");
 		tj.stopListening();
 		createServiceSTT();
+		//createServiceTTS();
+		//createServiceConversation();
+		//createServiceTwitter();
+		//createServiceToneAnalyzer();
 		tj.speak("No me hace falta mucha ayuda. Soy tan inteligente que puedo incluso clonarme. Vamos a Blumix, y te lo enseño. Por favor ayudante refresca la pantalla");
-		createServiceSTT();
-		createServiceTTS();
-		createServiceConversation();
-		createServiceTwitter();
-		createServiceToneAnalyzer();
+		
 		
 
 
 	}else if (containsconcurso){
 		console.log("entro en concurso");
-		tj.stopListening();
-		
-		tj.speak("¡Buena idea Antonio! Venga dale a refrescar para que todos vean que la competición ha empezado");
-		
+		tj.stopListening();		
 		
 		startapplication();
+		
+		tj.speak("¡Buena idea Antonio! Voy arrancando la competición. Te avisaré cuando esté lista.").then (function() {
+			return tj.sleep(20000);
+		}).then(function() {
+			return tj.speak("Un momento Antonio, ya puedes empezar la competición.");
+		});
 		
 	}
 	else if (containsverte){
 		console.log("entro en verte");
 		tj.stopListening();
 		
-		tj.speak("Diles que vengan luego al stand de IBM ¡Allí estaré! ¡Gracias ayudante! Ha sido un placer trabajar contigo");
+		tj.speak("Diles que vengan luego al estand de IBM ¡Allí estaré! ¡Gracias ayudante! Ha sido un placer trabajar contigo");
 		
 		tj.stopListening();
 
